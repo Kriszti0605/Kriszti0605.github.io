@@ -14,7 +14,25 @@
     </header>
 
     <nav>
-        <a href="javascript:void(0)" onclick="showContent('rolam')">Rólam</a>
+    <div class="dropdown">
+            <a href="javascript:void(0)">Rólam</a>
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a href="javascript:void(0)">Önéletrajz</a>
+                    <div class="submenu-content">
+                        <a href="javascript:void(0)" onclick="showContent('oneletrajzm')">Önéletrajz magyarul</a>
+                        <a href="javascript:void(0)" onclick="showContent('oneletrajza')">Önéletrajz angolul</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="javascript:void(0)">Motivációs levél</a>
+                    <div class="submenu-content">
+                        <a href="javascript:void(0)" onclick="showContent('motivaioslevelm')">Motivációs levél magyarul</a>
+                        <a href="javascript:void(0)" onclick="showContent('motivaioslevela')">Motivációs levél angolul</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="dropdown">
             <a href="javascript:void(0)">11. évfolyam</a>
@@ -53,7 +71,6 @@
                         <a href="javascript:void(0)" onclick="showContent('szamitogepes_szimulacio')">Számítógépes szimuláció</a>
                     </div>
                 </div>
-                <a href="javascript:void(0)" onclick="showContent('12_konz')">Konzultációs lapok</a>
             </div>
         </div>
 
@@ -73,74 +90,103 @@
                         <a href="javascript:void(0)" onclick="showContent('robottechnika')">Robottechnika CAD_CAM</a>
                     </div>
                 </div>
-                <a href="javascript:void(0)" onclick="showContent('13_konz')">Konzultációs lapok</a>
             </div>
         </div>
     </nav>
 
-    <div id="rolam" class="content">
-        <h2>Rólam</h2>
-        <p>Bemutatkozó szöveg...</p>
+    <div id="oneletrajzm" class="content">
+        <h2>Önéletrajz magyarul</h2>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Horváth Krisztina Önéletrajz.pdf"> </iframe>
+        </section>
     </div>
-    <div id="11_1_felev" class="content">
-        <h2>11. évfolyam 1. félév</h2>
-        <p>Leírás a 11. évfolyam 1. félévéről...</p>
+
+    <div id="oneletrajza" class="content">
+        <h2>Önéletrajz angolul</h2>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Krisztina Horváth Curriculum Vitae (1).pdf"> </iframe>
+        </section>
     </div>
-    <div id="11_2_felev" class="content">
-        <h2>11. évfolyam 2. félév</h2>
-        <p>Leírás a 11. évfolyam 2. félévéről...</p>
+
+    <div id="motivaioslevelm" class="content">
+        <h2>Motivációs levél magyarul</h2>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Horváth Krisztina motivációs levél (1) (1).pdf"> </iframe>
+        </section>
     </div>
-    <div id="11_konz" class="content">
-        <h2>11. évfolyam Konzultációs lapok</h2>
-        <p>Konzultációs lapok a 11. évfolyamhoz...</p>
+
+    <div id="motivaioslevela" class="content">
+        <h2>Motivációs levél angolul</h2>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Motivation Letter.pdf"> </iframe>
+        </section>
     </div>
+
     <div id="adatbaziskezeles" class="content">
         <h2>Adatbáziskezelés alapjai</h2>
         <section class="pdf-container">
-            <iframe class="pdf-viewer" src="adatbaziskezeles.pdf"> </iframe>
+            <iframe class="pdf-viewer" src="pdfek/adatbaziskezeles.pdf"> </iframe>
         </section>
     </div>
     <div id="halozatkezeles" class="content">
         <h2>Hálózat kezelés</h2>
-        <p>Leírás a hálózat kezeléséről...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Hálózatkezelés Horváth Krisztina portfólió.pdf"> </iframe>
+        </section>
     </div>
     <div id="elektronika" class="content">
         <h2>Elektronika</h2>
-        <p>Leírás az elektronikáról...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Mérés20.pdf"> </iframe>
+        </section>
     </div>
     <div id="mikrovez" class="content">
         <h2>Mikrovezérlő programozás</h2>
-        <p>Leírás a mikrovezérlő programozásról...</p>
+         <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Mikrovezérlő programozás.pdf"> </iframe>
+        </section>
     </div>
     <div id="programozas" class="content">
         <h2>Programozás alapjai</h2>
-        <p>Leírás a programozás alapjairól...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/programozás alapjai.pdf"> </iframe>
+        </section>
     </div>
     <div id="digitalis_aramkorok" class="content">
         <h2>Digitális áramkörök</h2>
-        <p>Leírás a digitális áramkörökről...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Digitális áramkörök.pdf"> </iframe>
+        </section>
     </div>
     <div id="plc" class="content">
         <h2>PLC programozás</h2>
         <section class="pdf-container">
-            <iframe class="pdf-viewer" src="plcprogramozas.pdf"> </iframe>
+            <iframe class="pdf-viewer" src="pdfek/plcprogramozas.pdf"> </iframe>
         </section>
     </div>
     <div id="szamitogepes_szimulacio" class="content">
         <h2>Számítógépes szimuláció</h2>
-        <p>Leírás a számítógépes szimulációról...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Számítógépes szimuláció.pdf"> </iframe>
+        </section>
     </div>
     <div id="iot" class="content">
         <h2>IoT</h2>
-        <p>Leírás az IoT-ról...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/iot portfólió.pdf"> </iframe>
+        </section>
     </div>
     <div id="programfejlesztes" class="content">
         <h2>Programfejlesztés</h2>
-        <p>Leírás a programfejlesztésről...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Programfejlesztés.pdf"> </iframe>
+        </section>
     </div>
     <div id="robottechnika" class="content">
         <h2>Robottechnika CAD_CAM</h2>
-        <p>Leírás a robottechnikáról...</p>
+        <section class="pdf-container">
+            <iframe class="pdf-viewer" src="pdfek/Robottechnika CAD.pdf"> </iframe>
+        </section>
     </div>
     <script>
         function showContent(contentId) {
